@@ -1,123 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-  <title>vision 2</title>
-  <link rel="shortcut icon" href="./favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./styles.css">
-
-  <script>
-    window.gameVersion = '0.99.2';
-  </script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-  <audio class="music" id="music" loop="loop" src="media/sand dream.mp3"></audio>
-  
+    <video autoplay="autoplay" muted="muted">
+        <source src="hhh.mp4">
+     </video>
 
-  <div class="ui">
-
-    <div class="ui__background"></div>
-
-    <div class="ui__game"></div>
-    <!-- 文字 -->
-    <div class="ui__texts">
-      <h1 class="text text--title">
-        
-      </h1>
-      <div class="text text--note">
-        点击两次开始游戏
-      </div>
-      <div class="text text--timer">
-        0:00
-      </div>
-      <div class="text text--complete">
-        <span>恭喜完成 !</span>
-      </div>
-      <div class="text text--best-time">
-        <icon trophy></icon>
-        <span>最好成绩 !</span>
-      </div>
-    </div>
-    <!-- 参数选择 -->
-    <div class="ui__prefs">
-      <range name="size" title="魔方阶数" list="2,3,4,5"></range>
-      <range name="flip" title="转动类型" list="迅速&nbsp;,平滑,反弹"></range>
-      <range name="scramble" title="打乱长度" list="20,25,30"></range>
-      <range name="fov" title="相机角度" list="低,高"></range>
-      <range name="theme" title="配色方案" list="1,2,3,4,5"></range>
-    </div>
-    <!-- 主题 -->
-    <div class="ui__theme">
-      <range name="hue" title="颜色" color></range>
-      <range name="saturation" title="饱和度" color></range>
-      <range name="lightness" title="亮度" color></range>
-    </div>
-    <!-- 数据 -->
-    <div class="ui__stats">
-      <div class="stats" name="cube-size">
-        <i>魔方阶数:</i><b>3x3x3</b>
-      </div>
-      <div class="stats" name="total-solves">
-        <i>通关次数:</i><b>-</b>
-      </div>
-      <div class="stats" name="best-time">
-        <i>最好成绩:</i><b>-</b>
-      </div>
-      <div class="stats" name="worst-time">
-        <i>最差成绩:</i><b>-</b>
-      </div>
-      <div class="stats" name="average">
-        <i>平均用时:</i><b>-</b>
-      </div>
-    </div>
-
-    <div class="ui__buttons">
-      <button class="btn btn--bl btn--stats">
-        <!-- 成绩 -->
-        <icon trophy></icon>
-      </button>
-      <button class="btn btn--br btn--prefs">
-        <!-- 设置 -->
-        <icon settings></icon>
-      </button>
-      <button class="btn btn--bl btn--back">
-        <!-- 返回 -->
-        <icon back></icon>
-      </button>
-      <button class="btn btn--br btn--theme">
-        <!-- 主题 -->
-        <icon theme></icon>
-      </button>
-      <button class="btn btn--br btn--reset">
-        <!-- 重置 -->
-        <icon reset></icon>
-      </button>
-      <button class="btn btn--br btn--resetcube">
-        <!-- 还原魔方 -->
-        <icon reset></icon>
-      </button>
-      <button class="btn btn--br btn--clearscore">
-        <!-- 清除成绩数据 -->
-        <icon reset></icon>
-      </button>
-      <button class="btn btn--tl btn--musicico">
-        <!-- 背景音乐 -->
-        <img class="musicimg" id="musicimg" src="media/music.png">
-      </button>
-    </div>
-
-  </div>
-  
-  <script src="node_modules/three/build/three.js" type="text/javascript"></script>
-  <script src="dist/cube.js" type="text/javascript"></script>
-
-
+     <!-- 从网页上引用一个视频 
+        缺点：会有广告等其他东西
+     -->
+     <!-- <iframe src="https://www.bilibili.com/video/BV1XJ411X7Ud?p=26" frameborder="0" width="" height=""></iframe> -->
 </body>
-
-
 </html>
